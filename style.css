@@ -153,11 +153,10 @@ body {
   text-align: justify;
 }
 
-
 #events .card-deck {
   width: 100%;
   left: 0px;
-  padding-right: 5rem
+  padding-right: 5rem;
 }
 
 /*--Board--*/
@@ -231,78 +230,62 @@ h3.treasurer {
 }
 
 /* --- About --- */
-
-main {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-bottom: 8rem;
-}
-
-main h3.heading {
-  max-width: 500px;
-  margin: 20px auto;
-  text-align: center;
-  padding-top: 4rem;
-  top: 3rem;
-}
-
-section {
-  width: 100%;
-  display: inline-flex;
-  align-items: center;
+.About {
+  display: flex;
   justify-content: center;
-  bottom: 2;
-  top: 3rem;
+  align-items: center;
+  min-height: 60vh;
+  padding-bottom: 7rem;
 }
 
-section .flex-col {
-  padding: 20px;
-}
-
-section .flex-col .cards {
-  max-width: 400px;
-  height: 305px;
-  background-color: #fff;
-  padding: 30px;
-  top: 3rem;
+.About .container {
   position: relative;
-  border-radius: 5px;
-  margin-bottom: 35px;
-  overflow: hidden;
-  box-shadow: 1px 1px 1px 1px hsl(229, 6%, 66%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1200px;
+}
+.About .container .card {
+  width: 320px;
+  margin: 20px;
+  padding: 40px 30px;
+  height: 20.5rem;
+  background: #ebf5fc;
+  border-radius: 25px;
+  box-shadow: -6px -6px 20px rgba(255, 225, 255, 0.1),
+    4px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-section .flex-col .cards .two {
-  padding: 100px;
+.About .container .card:hover {
+  box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.5),
+    inset 6px 6px 20px rgba(0, 0, 0, 0.05);
 }
 
-section .flex-col .cards h3 {
-  font-size: 1.5rem;
+.container .card .imgBx {
+  position: relative;
+  text-align: center;
 }
 
-section .flex-col .cards p {
-  margin-top: 10px;
-  line-height: 2;
+.container .card .imgBx img {
+  max-width: 120px;
 }
 
-section .flex-col .cards img {
-  position: absolute;
-  bottom: 10px;
-  right: 30px;
-  width: 5rem;
-  height: 5rem;
+.container .card .contentBx {
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
 }
 
-section .one {
-  border-top: 5px hsl(50, 97%, 64%) solid;
+.container .card .contentBx h2 {
+  color: #232323;
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 2px;
 }
 
-section .two {
-  border-top: 5px hsl(180, 62%, 55%) solid;
-}
-
-section .three {
-  border-top: 5px hsl(50, 97%, 64%) solid;
+.container .card .contentBx p {
+  color: #232323;
 }
 
 /*--modal--*/
@@ -450,7 +433,7 @@ section #blog {
 
 .blog-post_cta {
   display: inline-block;
-  padding: 1.5rem 1.8rem;
+  padding: 1rem 1.5rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 1rem;
@@ -464,6 +447,32 @@ section #blog {
 .blog-post_cta:hover {
   background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
   text-decoration: none;
+}
+
+/*---footer--*/
+footer {
+  font-family: "ZCOOL XiaoWei", serif;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  background-color: #000000;
+  color: #ffffff;
+  padding-top: 2rem;
+}
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+footer a {
+  color: #d5d5d5;
+}
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
 /*--responsive_blog--*/
@@ -527,9 +536,17 @@ section #blog {
   }
 }
 
+/*-- responsive caption (landing page)--*/
+@media screen and (max-width: 780px) {
+  .caption {
+    right: 0;
+    top: 1%;
+  }
+}
+
 /*-- responsive--*/
 /*--about--*/
-@media (max-width: 960px) {
+/* @media (max-width: 960px) {
   section {
     flex-direction: column;
   }
@@ -547,7 +564,7 @@ section #blog {
   header h1 {
     font-size: 1.4rem;
   }
-}
+} */
 
 /* background-color: #d9d9d9;
   background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
@@ -561,3 +578,5 @@ section #blog {
 /* someoneelse tie*/
 /* background-color: #485461;
   background-image: linear-gradient(315deg, #485461 0%, #28313b 74%); */
+
+/*--About--*/
