@@ -61,7 +61,7 @@ body {
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #00bf80;
+  color: tomato;
 }
 
 /*----landing page---*/
@@ -178,7 +178,7 @@ body {
   position: relative;
   padding-bottom: 10px;
   margin-top: 1em;
-  height: 22.5rem;
+  height: 21rem;
 }
 
 .board .imgbox img {
@@ -189,7 +189,7 @@ body {
 }
 
 .board img {
-  height: 22.5rem;
+  height: 21rem;
   width: 21rem;
 }
 
@@ -375,7 +375,7 @@ h3.second span {
   position: relative;
   display: inline-block;
   padding: 5px 10px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   border-bottom: 2px solid tomato;
 }
 
@@ -387,7 +387,7 @@ h3.second span:after {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   border-top: 1px solid tomato;
 }
 
