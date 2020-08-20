@@ -130,6 +130,13 @@ body {
   padding-bottom: 1.6rem;
 }
 
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  padding: 0.6rem 1.3rem;
+  font-size: 1.1rem;
+}
+
 /*---lecturers---*/
 
 #founder.card {
@@ -156,7 +163,7 @@ body {
 }
 
 .card {
-  background-color: #e6e6fa;
+  background-color: #f1f9ec;
 }
 
 #founder .card p {
@@ -493,7 +500,7 @@ h3.second span:after {
   position: relative;
   left: 0;
   margin-bottom: 2.5rem;
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: 200;
   color: #232322;
 }
