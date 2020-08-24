@@ -198,7 +198,7 @@
               <div class="row">
                   <div class="col-md-3 board text-center">
                     <div class="img-box" data-target="#sawan" data-toggle="modal">
-                      <img class="img-fluid" src="https://cdn.pixabay.com/photo/2020/07/14/22/10/woman-5405866_960_720.jpg" alt="Sawan Somaiah B K">
+                      <img class="img-fluid" src="img/sawan.jpeg" alt="Sawan Somaiah B K">
                     
                     </div>
                     <h2>Sawan Somaiah B K</h2>
@@ -435,7 +435,8 @@
       <div class="form-box">
       <h3 class="text-center second"><span style="color: #232323;">Register</span></h3>  
       <div class="register_box">
-        <form name="Reg"class="needs-validation" novalidate>
+        <form name="Reg" id="Reg"
+        validate>
           <div class="form-group">
             <div class="form-row">
               <div class="col">
@@ -444,6 +445,7 @@
                   type="text"
                   name="firstname"
                   class="form-control"
+                  autocomplete="off"
                   required
                 />
                 <div class="invalid-feedback">This is required</div>
@@ -454,6 +456,7 @@
                   type="text"
                   name="lastname"
                   class="form-control"
+                  autocomplete="off"
                   required
                 />
                 <div class="invalid-feedback">This is required</div>
@@ -466,6 +469,7 @@
               type="email"
               name="email"
               class="form-control"
+              autocomplete="off"
               pattern="^\w.+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
               required
             />
@@ -478,11 +482,12 @@
               <div class="col">
                 <label>Phone number</label>
                 <input
-                  type="text"
+                  type="number"
                   name="phone"
                   class="form-control"
                   maxlength="10"
                   pattern="[0-9]{10}"
+                  autocomplete="off"
                   required
                 />
                 <div class="invalid-feedback">
@@ -495,6 +500,7 @@
                   type="text"
                   name="usn"
                   class="form-control"
+                  autocomplete="off"
                   required
                 />
                 <div class="invalid-feedback">This is required</div>
@@ -506,6 +512,9 @@
           <div class="form-group">
             <label>Branch</label>
             <select name="branch" id="branch" class="form-control">
+              <option value="default"
+                >Select your branch</option
+              >
               <option value="Electronics & Communication"
                 >Electronics & Communication Engineering</option
               >
@@ -976,9 +985,15 @@
 
   form.addEventListener('submit', e => {
     e.preventDefault()
+    var response_message = document.getElementById("response_message");
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
+      .then((html) => {
+        window.location.href = 'https://prashanthkammar.github.io/ucsp_web/';
+      alert('Your registration was successfull')
+      
+    });
   })
 </script>
 
