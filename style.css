@@ -136,6 +136,9 @@ body {
   text-shadow: 0.1rem 0.1rem 0.1rem black;
   padding-bottom: 1.6rem;
 }
+#landing a {
+  font-family: "Libre Baskerville", serif;
+}
 
 .btn-lg {
   border-width: medium;
@@ -155,6 +158,10 @@ body {
 
 #founder h3.heading {
   padding-top: 10px;
+}
+
+h5.card-title {
+  font-family: "Gentium Book Basic", serif;
 }
 .card-deck {
   padding-left: 1rem;
@@ -632,7 +639,7 @@ h3.second span:after {
 
 /*---footer--*/
 footer {
-  font-family: "ZCOOL XiaoWei", serif;
+  font-family: "Gentium Book Basic", serif;
   position: absolute;
   width: 100%;
   left: 0px;
@@ -727,6 +734,11 @@ hr.light-100 {
     margin: 1rem 0.5rem 0 0.5rem;
     padding: 5rem 0.3rem 0 0.3rem;
   }
+
+  #blog {
+    padding-top: 20rem;
+  }
+
   .blog-post_img {
     bottom: 0;
     margin-bottom: 2px;
@@ -736,7 +748,7 @@ hr.light-100 {
     top: 0;
   }
   .blog-post_text {
-    font-size: 14px;
+    font-size: 18px;
   }
   .swiper-container {
     width: 85%;
