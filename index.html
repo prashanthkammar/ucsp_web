@@ -161,7 +161,7 @@
               <img class="card-img-top cardimg" src="https://nie.ac.in/wp-content/uploads/2019/03/kaulgud.png" alt="Card image cap">
               <div class="card-body">
               <h5 class="card-title">Rohith Prasanna</h5>
-              <p class="card-text">Head of the Department, <br> Department of Electronics & Communication Engineering NIE, MYSURU <br> For further details visit <br> <a href="https://nie.ac.in/faculty/narasimha-kaulgud/" target="_blank" style="text-decoration: none;">click here</a></p>
+              <p class="card-text">Founder of UCSP<br> Department of Electronics & Communication Engineering NIE, MYSURU <br> For further details visit <br> <a href="https://nie.ac.in/faculty/narasimha-kaulgud/" target="_blank" style="text-decoration: none;">click here</a></p>
             </div>
           </div>
 
@@ -982,10 +982,10 @@
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
       .then((html) => {
-        window.location.href = 'https://prashanthkammar.github.io/ucsp_web/';
       alert('Your registration was successfull')
       
-    });
+    })
+    .then(document.getElementById("Reg").reset())
   })
 </script>
 
